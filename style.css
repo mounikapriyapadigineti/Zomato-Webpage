@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+span{
+  color: #ff0000;
+}
 body {
   font-family: 'Merriweather', serif;
   background-color: #ebf2ff;
@@ -92,6 +94,145 @@ body {
   color: #1d3557;
 }
 
+.text-xl {
+      color: #1d3557;
+      font-weight: 900;
+}
+
+.text__order {
+  font-size: 20px;
+}
+
+#get__update {
+  margin-left: 1rem;
+}
+
+.restaurant__list__text {
+  margin: 1rem 0;
+}
+
+.restaurant__list__container {
+  margin-top: 3rem;
+}
+
+.restaurant__list__row_1 {
+  display: flex;
+  align-items: baseline;
+}
+.restaurant__list__row_2 {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+.restaurant2,
+.restaurant4 {
+  border-radius: 4px;
+  margin: 0 5px;
+  width: 200px;
+  height: 100px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.restaurant1,
+.restaurant3 {
+  border-radius: 4px;
+  margin: 0 5px;
+  width: 150px;
+  height: 80px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.email__subcribe__container {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.email__subcribe__input__field {
+  display: flex;
+  align-items: center;
+}
+
+.email__input {
+  border: 1px solid #ee89a0;
+  background-color: #fcedf0;
+  color: #1d3557;
+  font-weight: 700;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.email__input::placeholder {
+  color: #bdbcbc;
+}
+
+.footer__part {
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem 1rem 0 0;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+
+}
+
+.footer__part__image {
+
+  width: 250px;
+  filter: brightness(0) invert(1);
+
+}
+
+.footer__part__list {
+  margin-top: -1rem;
+  color: #fff;
+  list-style: none;
+
+}
+
+.footer__part__item {
+  margin: 5px 0;
+}
+
+.quote__container {
+  position: relative;
+  margin-top: 4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  border-radius: 13px;
+  background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+    center center / cover no-repeat;
+}
+.quote_image_overlay {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  border-radius: 13px;
+  background-color: #0a4065;
+  opacity: 49%;
+}
+.quote_image_text {
+  color: #fff;
+  z-index: 3;
+  margin: 0 1rem;
+  text-align: center;
+}
+
 @media (min-width:768px) {
   .navbar {
     justify-content: space-between;
@@ -139,6 +280,67 @@ body {
     margin-bottom: 30px;
   }
 
+  .restaurant__list__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .restaurant__list__row_1 {
+    justify-content: center;
+  }
+  .restaurant__list__row_2 {
+    margin-top: 3px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .email__subcribe__container {
+    display: flex;
+
+    justify-content: center;
+  }
+  .email__input {
+    width: 20rem;
+  }
+
+  #get__update {
+    margin-left: 3rem;
+  }
+  .quote__container {
+    height: 300px;
+    width: 100%;
+  }
+  .quote_image_overlay {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+  .quote_image_text {
+    color: #fff;
+    z-index: 3;
+    margin: 0 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .footer__part {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .text__order {
+    font-size: 40px;
+  }
+
+
+
+
 }
 
 @media (min-width:1024px) {
@@ -170,6 +372,23 @@ body {
   .explore__menu__text {
     font-weight: 900;
   }
+  .restaurant2,
+  .restaurant4 {
+    width: 300px;
+    height: 260px;
+  }
+  .restaurant1,
+  .restaurant3 {
+    width: 250px;
+    height: 180px;
+  }
 
+  .text__order {
+    font-size: 50px;
+  }
+
+  .text-xl {
+    font-size: 50px;
+  }
 
 }
